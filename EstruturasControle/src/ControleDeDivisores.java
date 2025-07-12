@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ControleDeDivisores {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("\n\nNúmero inicial: ");
@@ -15,7 +16,7 @@ public class ControleDeDivisores {
 
             if (entrada < num) {
                 System.out.println("Número menor que o inicial, ignorado.");
-                continue; // volta pro início do loop
+                continue;
             }
 
             if (entrada % num != 0) {
@@ -26,6 +27,5 @@ public class ControleDeDivisores {
             System.out.println(entrada + " é divisível por " + num);
         }
 
-        scanner.close();
     }
 }
